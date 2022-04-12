@@ -1,17 +1,25 @@
 const messages = {
   en: {
     translations: {
-      select: {
-        default: "Change Language",
+      buttons: {
+        about: "About Me",
+        skills: "Skills",
+        repositories: "Repositories",
+        contacts: "Contacts",
+        submit: "Submit",
+        submiting: "Submitting...",
+        submited: "Submited!",
+        cancel: "close",
       },
       titles: {
         about: "About Me",
         skills: "Skills",
         repositories: "Repositories",
         contacts: "Contacts",
+        form: "Contact form",
       },
       a: {
-        access : "Access",
+        access: "Access",
       },
       texts: {
         about: {
@@ -33,10 +41,26 @@ const messages = {
         },
         repositories: {
           texts: {
-            text1: "ENGLISH Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis. Phasellus et mi risus. Donec blandit convallis ligula, quis cursus massa commodo id. Nulla fermentum varius mauris.",
-            text2: "ENGLISH Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar.",
-          }
+            text1:
+              "ENGLISH Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis. Phasellus et mi risus. Donec blandit convallis ligula, quis cursus massa commodo id. Nulla fermentum varius mauris.",
+            text2:
+              "ENGLISH Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar.",
+          },
         },
+        contacts: {
+          subTitle: "subtitle",
+          text: "English Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis.",
+        },
+        footer: {
+          text: "English Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        },
+      },
+      form: {
+        name: "Name",
+        email: "E-mail",
+        subject: "Subject",
+        message: "Message",
+        success: "Thank you for your message. I will get back to you as soon as possible!"
       },
     },
   },

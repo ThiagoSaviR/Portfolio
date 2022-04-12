@@ -27,10 +27,10 @@ export const WrapperText = styled.div`
   margin: 50px 0 0px 0;
   `;
 export const Text = styled.p`
-  width: 100%;
   color: #d7d7d7;
   text-align: justify;
   font-size: 1rem;
+
 `;
 
 export const SubTitle = styled.h2`

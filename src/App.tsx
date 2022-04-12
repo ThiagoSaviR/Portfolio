@@ -1,13 +1,17 @@
-import './style.css' 
-import ASideBar from './components/aSideBar'
-import Header from './components/header'
-import BodyContainer from './pages/singlePage';
+import React from "react";
+import "./style.css";
+import Header from "./components/header";
+import BodyContainer from "./pages/singlePage";
+import { GitUserApiProvider } from "./contexts";
 
-function App() {
+function App({ videoClasses }: any) {
+  console.log(videoClasses);
   return (
     <>
-      <Header />
-      <BodyContainer />
+      <GitUserApiProvider>
+        <Header />
+        <BodyContainer />
+      </GitUserApiProvider>
     </>
   );
 }

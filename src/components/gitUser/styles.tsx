@@ -14,7 +14,7 @@ export const GitAvatar = styled.img`
   border-radius: 50%;
   border: 3px solid #f0803c;
   width: 200px;
-  margin: 0 10px;
+  margin: 0 25px;
 `;
 export const WrapperGitDesc = styled.div``;
 export const GitUser = styled.h1``;

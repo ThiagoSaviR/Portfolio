@@ -8,7 +8,7 @@ import {
   Name,
 } from "./styles";
 
-import IconImage from "../IconImage";
+import IconImage from "../iconImage";
 import Line from "../line";
 
 import avatar from "../../assets/images/avatar.png";

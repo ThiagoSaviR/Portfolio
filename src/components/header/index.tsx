@@ -1,7 +1,5 @@
 import {
   Container,
-  Title,
-  WrapperTitle,
   WrapperImage,
   Image,
   WrapperButton,
@@ -25,14 +23,17 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <WrapperTitle>
-          <Title>Thiago's Portfolio</Title>
-        </WrapperTitle>
         <WrapperButton>
-          <StyledButton text="titles.about" />
-          <StyledButton text="titles.skills" />
-          <StyledButton text="titles.contacts" />
-          <StyledButton text="titles.repositories" />
+          <StyledButton text="buttons.about" />
+        </WrapperButton>
+        <WrapperButton>
+          <StyledButton text="buttons.skills" />
+        </WrapperButton>
+        <WrapperButton>
+          <StyledButton text="buttons.contacts" />
+        </WrapperButton>
+        <WrapperButton>
+          <StyledButton text="buttons.repositories" />
         </WrapperButton>
       </Wrapper>
       <WrapperImage>

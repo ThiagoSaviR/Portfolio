@@ -16,27 +16,27 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   font-family: "Pacifico";
-  font-size: 42px;
+  font-size: 2.6rem;
   font-weight: 400;
-  padding-top: 10px;
 `;
 
 export const WrapperTitle = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
 `;
 export const Wrapper = styled.div`
   width: 100%;
+  margin-left: 400px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 20px;
+  justify-content: flex-end;
+
 `;
 
 export const WrapperButton = styled.div`
-  width: 650px;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  margin: 0 10px;
 `;
 export const WrapperImage = styled.div`
   display: flex;

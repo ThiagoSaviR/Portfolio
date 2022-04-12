@@ -9,7 +9,6 @@ export const Avatar = styled.img`
 
 export const Container = styled.div`
   position: fixed;
-  margin-top: 90px;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -17,10 +16,11 @@ export const Container = styled.div`
   width: 360px;
   height: 100vh;
   background: #171210;
+  z-index: 2;
 `;
 
 export const WrapperImage = styled.div`
-  margin-top: 30px;
+  margin-top: 100px;
   width: 210px;
   height: 210px;
   background: #fff;

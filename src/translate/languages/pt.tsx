@@ -1,14 +1,22 @@
 const messages = {
   pt: {
     translations: {
-      select: {
-        default: "Troque o idioma",
+      buttons: {
+        about: "Sobre mim",
+        skills: "Habilidades",
+        repositories: "Repositórios",
+        contacts: "Contatos",
+        submit: "Enviar",
+        submiting: "Enviando...",
+        submited: "Enviado!",
+        cancel: "fechar",
       },
       titles: {
         about: "Sobre mim",
         skills: "Habilidades",
         contacts: "Contatos",
         repositories: "Repositórios",
+        form: "Formulário de contato",
       },
       a: {
         access : "Acessar",
@@ -37,6 +45,20 @@ const messages = {
             text2: "PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar.",
           }
         },
+        contacts: {
+          subTitle: "subtítulo",
+            text: "PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis."
+        },
+        footer: {
+          text:"PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+      },
+      form: {
+        name: "Nome",
+        email: "E-mail",
+        subject: "Assunto",
+        message: "Mensagem",
+        success: "Obrigado pela sua mensagem. Retornarei o mais breve possível!"
       },
     },
   },

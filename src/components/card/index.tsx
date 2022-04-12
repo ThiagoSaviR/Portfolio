@@ -10,7 +10,7 @@ const Card = () => {
   const [repositories, setRepositories] = useState<any>([]);
 
   useEffect(() => {
-    api.get("/ThiagoSaviR/starred").then(({ data }) => {
+    api.get("/ThiagoSaviR/repos").then(({ data }) => {
       setRepositories(data);
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -30,7 +30,7 @@ const Card = () => {
             </div>
             <div className="face face2">
               <div className="cardContent">
-                <p>{re.description}</p>
+                <p>{repository.description}</p>
                 <a
                   href={repository.html_url}
                   target="_blank"

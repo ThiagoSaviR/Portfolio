@@ -20,8 +20,8 @@ export const WrapperCard = styled.div`
   }
   div.card:hover .face {
     width: 290px;
-
     filter: none;
+   
   }
   div.card .face.face1 {
     position: relative;
@@ -69,6 +69,12 @@ export const WrapperCard = styled.div`
     transform: translateY(-6px);
     border-radius: 0 0 10px 10px;
   }
+
+
+  div.card .face.face2 .cardContent {
+    padding: 20px;
+  }
+
 
   div.card .face.face2 .cardContent a{
     display: flex;
