@@ -1,24 +1,20 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { WrapperCard } from "./styles";
 
 import { i18n } from "../../translate/i18n";
-
-import api from "../../services/api";
 import { repo } from "../../services/repositories";
+import { useGitRepositories } from "../../contexts/gitRepositories";
 
 const Card = () => {
-  const [repositories, setRepositories] = useState<any>([]);
+const { data, generateGitRepositoriesData } = useGitRepositories();
 
   useEffect(() => {
-    api.get("/ThiagoSaviR/repos").then(({ data }) => {
-      setRepositories(data);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    generateGitRepositoriesData()
+  });
 
   return (
     <WrapperCard>
-      {repositories?.map((repository: any) =>
+      {data?.map((repository: any) =>
         repo.map((re: any) => (
           repository.id === re.id ? (
           <div key={repository.id} className="card">

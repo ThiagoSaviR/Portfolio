@@ -13,11 +13,15 @@ interface IProps {
   text2?: string;
   text3?: string;
   multiple?: boolean;
+  id?: string;
+  onChange?: any;
 }
+
 
 const ContentContainer: React.FC<IProps> = ({
   alignTitle,
   title,
+  id,
   subTitle1,
   subTitle2,
   subTitle3,
@@ -26,6 +30,7 @@ const ContentContainer: React.FC<IProps> = ({
   text2,
   text3,
   multiple,
+  onChange
 }) => {
   const styles = {
     alignItems: alignTitle,
@@ -33,7 +38,7 @@ const ContentContainer: React.FC<IProps> = ({
   return (
     <Container>
       <WrapperTitle style={styles}>
-        <Title>{title}</Title>
+        <Title id={id} onChange={onChange}>{title}</Title>
         <Line styledWidth={lineWidth} />
       </WrapperTitle>
       {!multiple? (

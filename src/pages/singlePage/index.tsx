@@ -29,11 +29,20 @@ import gmail from "../../assets/images/gmail.svg";
 
 import EmailForm from "../../components/emailForm";
 import StyledButton from "../../components/button";
+import { useButton } from "../../contexts/buttons";
 
 const BodyContainer = () => {
+  const { t } = i18n;
   const [formIsVisible, setFormIsVisible] = useState(false);
 
-  const { t } = i18n;
+  const { id, setId, px } = useButton();
+  if (id) {
+    window.scrollTo({
+      top: px,
+      behavior: "smooth",
+    });
+    setId("");
+  }
 
   return (
     <Container>
@@ -47,7 +56,6 @@ const BodyContainer = () => {
             text1={t("texts.skills.subTitle1.text")}
           />
         </WrapperContent>
-
         <WrapperContent>
           <ContentContainer
             alignTitle="flex-start"
@@ -109,7 +117,10 @@ const BodyContainer = () => {
               {formIsVisible ? (
                 <>
                   <EmailForm />
-                  <StyledButton onClick={() => setFormIsVisible(!formIsVisible)} text={t("buttons.cancel")} />
+                  <StyledButton
+                    onClick={() => setFormIsVisible(!formIsVisible)}
+                    text={t("buttons.cancel")}
+                  />
                 </>
               ) : null}
             </Form>

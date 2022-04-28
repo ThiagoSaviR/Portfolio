@@ -25,6 +25,7 @@ export const ButtonStyled: React.FC<ButtonProps> = styled(Button)`
   border: none;
   position: absolute;
   bottom: 4px;
+  transition: 0.15s;
   &:hover {
     background: #171210;
     color: #edf060;
@@ -33,6 +34,8 @@ export const ButtonStyled: React.FC<ButtonProps> = styled(Button)`
     background: #171210;
     width: 100%;
     color: #edf060;
+  }
+  &:active {
     bottom: 0px;
   }
 `;

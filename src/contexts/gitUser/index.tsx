@@ -1,11 +1,10 @@
-import React, { useContext, useState } from "react";
-import { createContext, Dispatch, SetStateAction } from "react";
-import { getGitUser } from "../api/gitUser/index";
-import { IGitUserResponse } from "../api/gitUser/types";
+import React, { useContext, useState, createContext, Dispatch, SetStateAction } from "react";
+import { getGitUser } from "../../api/gitUser/index";
+import { IGitUserResponse } from "../../api/gitUser/types";
 
 interface IGitUserData {
-  data: IGitUserResponse[];
-  setData: Dispatch<SetStateAction<IGitUserResponse[]>>;
+  data: IGitUserResponse;
+  setData: Dispatch<SetStateAction<IGitUserResponse>>;
   loading: boolean;
   setLoading: Dispatch<SetStateAction<boolean>>;
   generateGitUserData: () => Promise<void>;
@@ -17,15 +16,15 @@ export const GitUserApiContext = createContext<IGitUserData>(
 );
 
 export const GitUserApiProvider: React.FC = ({ children }) => {
-    const [data, setData] = useState<IGitUserResponse[]>([] as IGitUserResponse[]);
+    const [data, setData] = useState<IGitUserResponse>([] as IGitUserResponse);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
     
     const generateGitUserData = async () => {
         setLoading(true);
 
-        await getGitUser ()
-      .then((res: IGitUserResponse[]) => {
+        await getGitUser()
+      .then((res: IGitUserResponse) => {
         setData(res);
         setLoading(false);
       })

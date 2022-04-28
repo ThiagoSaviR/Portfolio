@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
   WrapperGitUser,
   GitAvatar,
@@ -6,25 +6,21 @@ import {
   GitUser,
   GitDesc,
 } from "./styles";
-
-import api from "../../services/api";
+import { useGitUser } from "../../contexts/gitUser";
 
 const GitUserCard = () => {
-  const [user, setUser] = useState<any>([]);
+  const { data, generateGitUserData } = useGitUser();
 
   useEffect(() => {
-    api.get("/ThiagoSaviR").then(({ data }) => {
-      setUser(data);
-      console.log(user?.avatar_url);
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+    generateGitUserData();
+  });
+
   return (
-    <WrapperGitUser href={user.html_url} target="_blank" rel="noopener noreferrer">
-      <GitAvatar src={user.avatar_url} />
+    <WrapperGitUser href={data.html_url} target="_blank" rel="noopener noreferrer">
+      <GitAvatar src={data.avatar_url} />
       <WrapperGitDesc>
-        <GitUser>{user.login}</GitUser>
-        <GitDesc>{user.bio}</GitDesc>
+        <GitUser>{data.login}</GitUser>
+        <GitDesc>{data.bio}</GitDesc>
       </WrapperGitDesc>
     </WrapperGitUser>
   );

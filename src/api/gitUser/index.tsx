@@ -3,10 +3,10 @@ import { BaseApi } from "../index";
 
 import { IGitUserResponse } from "./types";
 
-export const getGitUser = async (): Promise<IGitUserResponse[]> => {
+export const getGitUser = async (): Promise<IGitUserResponse> => {
   const response = await BaseApi.get<
-    IGitUserResponse[],
-    AxiosResponse<IGitUserResponse[]>
-  >(`/ThiagoSavir/`);
+    IGitUserResponse,
+    AxiosResponse<IGitUserResponse>
+  >(`/ThiagoSavir`);
   return response.data;
 };

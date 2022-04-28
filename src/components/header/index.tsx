@@ -8,6 +8,8 @@ import {
 } from "./styles";
 import StyledButton from "../button";
 
+import { useButton } from "../../contexts/buttons";
+
 import brazil from "../../assets/images/brazilFlag.svg";
 import usa from "../../assets/images/usaFlag.svg";
 
@@ -20,27 +22,53 @@ const Header = () => {
     window.location = window.location;
   };
 
+  const { id, setId, px, setPx } = useButton();
+
   return (
     <Container>
       <Wrapper>
         <WrapperButton>
-          <StyledButton text="buttons.about" />
+          <StyledButton
+            onClick={() => {
+              setId("about");
+              setPx(0);
+            }}
+            text="buttons.about"
+          />
         </WrapperButton>
         <WrapperButton>
-          <StyledButton text="buttons.skills" />
+          <StyledButton
+            onClick={() => {
+              setId("skills");
+              setPx(400);
+            }}
+            text="buttons.skills"
+          />
         </WrapperButton>
         <WrapperButton>
-          <StyledButton text="buttons.contacts" />
+          <StyledButton
+            onClick={() => {
+              setId("repositories");
+              setPx(1200);
+            }}
+            text="buttons.repositories"
+          />
         </WrapperButton>
         <WrapperButton>
-          <StyledButton text="buttons.repositories" />
+          <StyledButton
+            onClick={() => {
+              setId("contacts");
+              setPx(2580);
+            }}
+            text="buttons.contacts"
+          />
         </WrapperButton>
       </Wrapper>
       <WrapperImage>
-        <Language onClick={() => handleClick('pt-BR')}>
+        <Language onClick={() => handleClick("pt-BR")}>
           <Image src={brazil} />
         </Language>
-        <Language onClick={() => handleClick('en-US')}>
+        <Language onClick={() => handleClick("en-US")}>
           <Image src={usa} />
         </Language>
       </WrapperImage>
