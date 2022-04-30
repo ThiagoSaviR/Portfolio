@@ -4,8 +4,8 @@ import axios from 'axios'
 import { i18n } from '../../translate/i18n';
 import { WrapperButton, ButtonStyled, Main, Form, Error } from './styles';
 
-import StyledTextarea from '../../components/textarea';
-import StyledInput from '../../components/input';
+import StyledTextarea from '../textarea';
+import StyledInput from '../input';
 
 
 const EmailForm = () => {
@@ -17,10 +17,12 @@ const EmailForm = () => {
     info: { error: false, msg: null }
   })
   const [inputs, setInputs] = useState({
+    name: '',
+    subject: '',
     email: '',
     message: '',
   })
-  const handleServerResponse = (ok, msg) => {
+  const handleServerResponse = (ok: any, msg: any) => {
     if (ok) {
       setStatus({
         submitted: true,
@@ -28,16 +30,20 @@ const EmailForm = () => {
         info: { error: false, msg: msg }
       })
       setInputs({
+        name: '',
+        subject: '',
         email: '',
         message: '',
       })
     } else {
       setStatus({
+        submitted: false,
+        submitting: false,
         info: { error: true, msg: msg }
       })
     }
   }
-  const handleOnChange = e => {
+  const handleOnChange = (e: any) => {
     e.persist()
     setInputs(prev => ({
       ...prev,
@@ -49,7 +55,7 @@ const EmailForm = () => {
       info: { error: false, msg: null }
     })
   }
-  const handleOnSubmit = e => {
+  const handleOnSubmit = (e: any) => {
     e.preventDefault()
     setStatus(prevStatus => ({ ...prevStatus, submitting: true }))
     axios({
@@ -101,7 +107,7 @@ const EmailForm = () => {
         id="message"
         name="_message"
         label={t("form.message")}
-        rows="5"
+        rows={5}
         onChange={handleOnChange}
         required
         value={inputs.message}

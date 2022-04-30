@@ -23,7 +23,7 @@ const messages = {
       },
       texts: {
         about: {
-          text: "PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis. Phasellus et mi risus. Donec blandit convallis ligula, quis cursus massa commodo id. Nulla fermentum varius mauris, et venenatis sapien mattis eget. Maecenas congue gravida sem, bibendum vulputate erat imperdiet vel. Proin egestas a lacus ac tincidunt. Quisque sollicitudin dui at viverra suscipit. Aliquam erat volutpat. Proin ultrices lacus in nunc vestibulum cursus. Integer id ex vel erat vulputate faucibus in quis sem. Mauris ultrices iaculis ante, eu interdum dui gravida vel. Fusce molestie quam a malesuada vehicula.",
+          text: "Meu nome é Thiago, tenho 33 anos e moro em São Pedro - SP. Sou aluno do 4º semestre de Ciência da Computação nas Faculdades Metropolitanas Unidas (FMU). Atualmente sou estagiário na Framework Digital, onde aprendo e aprimoro minhas habilidades em desenvolvimento de software cada dia mais. Desde garoto sou apaixonado por tecnologia, jogos e música. Ultimamente meus principais hobbies são jogos retrô e aprender mais sobre desenvolvimento."
         },
         skills: {
           subTitle1: {
@@ -41,16 +41,15 @@ const messages = {
         },
         repositories: {
           texts: {
-            text1: "PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis. Phasellus et mi risus. Donec blandit convallis ligula, quis cursus massa commodo id. Nulla fermentum varius mauris.",
-            text2: "PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar.",
+            text1: "Durante minha jornada de aprendizado, desenvolvi alguns projetos e atividades, alguns deles estão disponíveis no repositório do GitHub. Que pode ser acessado pelo cartão a seguir.",
+            text2: "A baixo estão alguns dos projetos que desenvolvi até aqui. Acesse diretamente o repositório do projeto para ver o código fonte.",
           }
         },
         contacts: {
-          subTitle: "subtítulo",
-            text: "PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo rhoncus pulvinar. Donec fermentum massa non congue mattis."
+            text: "Quer conversar comigo? Você pode me encotrar no Linkedin ou pode me mandar um E-mail."
         },
         footer: {
-          text:"PORTUGUÊS Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          text:"Obrigado por visitar meu Portfólio! =)",
         },
       },
       form: {

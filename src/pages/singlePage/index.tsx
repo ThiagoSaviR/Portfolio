@@ -5,6 +5,7 @@ import ASideBar from "../../components/aSideBar";
 import ContentContainer from "../../components/contentContainer";
 import Card from "../../components/card";
 import GitUserCard from "../../components/gitUser";
+import Footer from "../../components/footer";
 
 import {
   ContainerBody,
@@ -18,10 +19,7 @@ import {
   ContactMail,
   WrapperLinks,
   Form,
-  WrapperFooter,
-  Footer,
-  FooterText,
-  TM,
+  WrapperFooter
 } from "./styles";
 
 import linkedin from "../../assets/images/linkedin.svg";
@@ -53,7 +51,7 @@ const BodyContainer = () => {
             alignTitle="flex-end"
             title={t("titles.about")}
             lineWidth={720}
-            text1={t("texts.skills.subTitle1.text")}
+            text1={t("texts.about.text")}
           />
         </WrapperContent>
         <WrapperContent>
@@ -93,8 +91,6 @@ const BodyContainer = () => {
             alignTitle="flex-start"
             title={t("titles.contacts")}
             lineWidth={720}
-            multiple={true}
-            subTitle1={t("texts.contacts.subTitle")}
             text1={t("texts.contacts.text")}
           />
           <WrapperContacts>
@@ -126,15 +122,7 @@ const BodyContainer = () => {
             </Form>
           </WrapperContacts>
           <WrapperFooter>
-            <Footer>
-              <FooterText>
-                <ContentContainer
-                  lineWidth={0}
-                  text1={t("texts.footer.text")}
-                />
-                <TM>© 2022 - Thiago Savi</TM>
-              </FooterText>
-            </Footer>
+            <Footer />
           </WrapperFooter>
         </WrapperContent>
       </ContainerBody>
