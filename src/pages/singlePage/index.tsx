@@ -64,8 +64,6 @@ const BodyContainer = () => {
             text1={t("texts.skills.subTitle1.text")}
             subTitle2={t("texts.skills.subTitle2.subTitle")}
             text2={t("texts.skills.subTitle2.text")}
-            subTitle3={t("texts.skills.subTitle3.subTitle")}
-            text3={t("texts.skills.subTitle3.text")}
           />
         </WrapperContent>
         <WrapperContent>
