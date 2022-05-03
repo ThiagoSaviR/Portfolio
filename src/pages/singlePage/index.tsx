@@ -6,7 +6,7 @@ import Card from "../../components/card";
 import GitUserCard from "../../components/gitUser";
 import Footer from "../../components/footer";
 
-import AsideBar from "../../components/asideBar"
+import AsideBar from "../../components/aside"
 
 import {
   ContainerBody,
