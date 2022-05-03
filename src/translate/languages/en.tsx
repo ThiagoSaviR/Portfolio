@@ -8,8 +8,8 @@ export const messages = {
         contacts: "Contacts",
         submit: "Submit",
         submiting: "Submitting...",
-        submited: "Submited!",
-        cancel: "close",
+        submited: "Submited",
+        cancel: "Close",
       },
       titles: {
         about: "About Me",
@@ -55,7 +55,7 @@ export const messages = {
         email: "E-mail",
         subject: "Subject",
         message: "Message",
-        success: "Thank you for your message. I will get back to you as soon as possible!"
+        success: "Thank you for your message."
       },
     },
   },

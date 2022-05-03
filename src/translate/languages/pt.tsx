@@ -8,8 +8,8 @@ export const messages = {
         contacts: "Contatos",
         submit: "Enviar",
         submiting: "Enviando...",
-        submited: "Enviado!",
-        cancel: "fechar",
+        submited: "Enviado",
+        cancel: "Fechar",
       },
       titles: {
         about: "Sobre mim",
@@ -42,7 +42,7 @@ export const messages = {
           }
         },
         contacts: {
-            text: "Quer conversar comigo? Você pode me encotrar no Linkedin ou pode me mandar um E-mail."
+            text: "Quer conversar comigo? Você pode me encontrar no Linkedin ou me mandar um e-mail."
         },
         footer: {
           text:"Obrigado por visitar meu Portfólio! =)",
@@ -53,7 +53,7 @@ export const messages = {
         email: "E-mail",
         subject: "Assunto",
         message: "Mensagem",
-        success: "Obrigado pela sua mensagem. Retornarei o mais breve possível!"
+        success: "Obrigado pela sua mensagem."
       },
     },
   },
