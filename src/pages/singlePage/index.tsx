@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { i18n } from "../../translate/i18n";
 
-import ASideBar from "../../components/aSideBar";
+import ASideBar from "../../components/asideBar";
 import ContentContainer from "../../components/contentContainer";
 import Card from "../../components/card";
 import GitUserCard from "../../components/gitUser";
