@@ -38,14 +38,14 @@ export const messages = {
         repositories: {
           texts: {
             text1: "Durante minha jornada de aprendizado, desenvolvi alguns projetos e atividades, alguns deles estão disponíveis no repositório do GitHub, que pode ser acessado pelo cartão a seguir.",
-            text2: "A baixo estão alguns dos projetos que desenvolvi até aqui. Acesse diretamente o repositório do projeto para ver o código fonte.",
+            text2: "Abaixo estão alguns dos projetos que desenvolvi até aqui. Acesse diretamente o repositório do projeto para ver o código fonte.",
           }
         },
         contacts: {
             text: "Quer conversar comigo? Você pode me encontrar no Linkedin ou me mandar um e-mail."
         },
         footer: {
-          text:"Obrigado por visitar meu Portfólio! =)",
+          text:"Obrigado pela visita! =)",
         },
       },
       form: {

@@ -47,7 +47,7 @@ export const messages = {
           text: "Do you want to talk with me? You can find me on Linkedin or you can send me an E-mail.",
         },
         footer: {
-          text: "Thanks for visiting my Portfolio! =)",
+          text: "Thanks for your visit! =)",
         },
       },
       form: {
