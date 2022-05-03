@@ -6,8 +6,8 @@ import { GitUserApiProvider } from "./contexts/gitUser";
 import { ButtonProvider } from "./contexts/buttons";
 import { GitRepositoriesApiProvider } from "./contexts/gitRepositories";
 
-function App({ videoClasses }: any) {
-  console.log(videoClasses);
+function App() {
+ 
   return (
     <>
       <GitRepositoriesApiProvider>
