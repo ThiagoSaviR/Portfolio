@@ -49,7 +49,7 @@ const Header = () => {
           <StyledButton
             onClick={() => {
               setId("repositories");
-              setPx(1200);
+              setPx(960);
             }}
             text="buttons.repositories"
           />
@@ -58,7 +58,7 @@ const Header = () => {
           <StyledButton
             onClick={() => {
               setId("contacts");
-              setPx(2580);
+              setPx(2300);
             }}
             text="buttons.contacts"
           />

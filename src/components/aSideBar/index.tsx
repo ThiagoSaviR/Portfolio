@@ -19,7 +19,7 @@ import Js from "../../assets/images/js.svg";
 import React from "../../assets/images/react.svg";
 import Ts from "../../assets/images/ts.svg";
 
-const asideBar = () => {
+const AsideBar = () => {
   return (
     <Container>
       <WrapperImage>
@@ -70,4 +70,4 @@ const asideBar = () => {
   );
 };
 
-export default asideBar;
+export default AsideBar;
